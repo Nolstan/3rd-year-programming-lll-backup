@@ -8,6 +8,7 @@
 
 # 1 Assignent - what it does is to assign a value to a variable
 # eg x = 5
+
 #  2 Comparison - what it does is to compare two values and return a boolean value
 # eg x == 5
 
@@ -20,10 +21,17 @@
 # print(a < b)  # Output: True
 
 
+
 # can we use < > on strings?
 # print(b > c)  # Output: True
 # HOW IS IT COMPARING STRINGS EXACTLY?
 # It uses Alphabetical order to compare strings specifically ASCII values of characters
+
+# Python compares strings lexicographically by checking characters from left to right 
+# and comparing their Unicode (ASCII) values. The comparison stops when a different character is found
+
+
+
 
 
 # 3 Logical - what it does is to combine multiple boolean values and return a single boolean value
@@ -35,10 +43,19 @@
 # print(a > 10 or b < 15)  # Output: True
 
 # 4 Identity - what it does is to compare the memory location of two objects and return a boolean value
-# eg x is y
+# eg 
+# a = [1, 2, 3]
+# b = a
+# c = [1, 2, 3]
+
+# print(a is b)      # True
+# print(a is c)      # False
+# print(a == c)      # True
 
 # 5 Membership - what it does is to check if a value is present in a sequence and return a boolean value
 # eg x in y
+# print("H" in "Hello")  # Output: True
+
 
 # the power operator is used to raise a number to a certain power
 
@@ -68,12 +85,16 @@
 #     print("Login failed! Incorrect username or password.")
 
 # identity operator is and is not example
-a = 4
+a = 400000
 b = a
+c = int("400000") # forcing python to create a new object in memory
 
 print(a is b)  # Output: True
+print(a is c)  # Output: True
+# Python caches  integers  to save memory and speed up programs.
+# thats why a and c are pointing to the same memory location because 
+# they are both 4 which is a small integer that is cached by Python
 
-# what is happening here is that both a and b are pointing to the same memory location
 
 
 for i in range(101):

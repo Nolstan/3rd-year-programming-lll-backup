@@ -17,9 +17,9 @@ my_set.clear() # removes all elements from the set
 # copy()
 my_set.copy() # returns a copy of the set
 # difference()
-my_set.difference({1, 2, 3})
+my_set.difference({1, 2, 3})# returns a set that contains the difference between two sets
 # difference_update()
-my_set.difference_update({1, 2, 3})
+my_set.difference_update({1, 2, 3})# removes the elements in the set that are also in another set
 # discard()
 my_set.discard(4)
 # intersection()

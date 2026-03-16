@@ -9,7 +9,7 @@
 # elif age >= 100:
 #     print('You must be dead by now bro')
 # else:
-#     print('You son a bitch you are still a child')
+#     print('You son of a bitch you are still a child')
 
 
 # grade = "E"
@@ -19,7 +19,7 @@
 # elif grade == "B":
 #     print("Yall can do better than this")
 # elif grade == "C":
-#     print("Luck bastard")
+#     print("Lucky bastard")
 # elif grade == "D":
 #     print("watch out next time u might hit the bottom")
 # elif grade == "E":
@@ -45,10 +45,11 @@
 # Multiplication table based
 # on the value from a user
 
-number = int(input("Enter a number: "))
+# number = int(input("Enter a number: "))
 
-for i in range(1,11):
-    print(f"{number} x {i} = {number * i}")
+# for i in range(1,11):
+    # pass
+    # print(f"{number} x {i} = {number * i}")
 
 
 
@@ -57,29 +58,29 @@ for i in range(1,11):
 # fuzz when the number is divisible by 7
 # when the numbe is divisible by 15 print hooray
 
-for i in range(101):
-    if i % 15 == 0:
-        print("Hooray")
-    elif i % 7 == 0:
-        print("Fuzz")
-    elif i % 2 == 0:
-        print("Fizz")
-    else:
-        print(i)
+# for i in range(101):
+#     if i % 15 == 0:
+#         print("Hooray")
+#     elif i % 7 == 0:
+#         print("Fuzz")
+#     elif i % 2 == 0:
+#         print("Fizz")
+#     else:
+#         print(i)
 
 # TODO: match...case
 # its more like switch...case in other languages
-
-# match grade:
-#     case "A":
-#         print("Bright azz nigga")
-#     case "B":
-#         print("Yall can do better than this")
-#     case "C":
-#         print("Luck bastard")
-#     case "D":
-#         print("watch out next time u might hit the bottom")
-#     case "E":
-#         print("dead meat")
-#     case _:
-#         print("You chose the wrong program")
+grade = "A" or "a"
+match grade:
+    case "A":
+        print("Bright azz nigga")
+    case "B":
+        print("Yall can do better than this")
+    case "C":
+        print("Lucky bastard")
+    case "D":
+        print("watch out next time u might hit the bottom")
+    case "E":
+        print("dead meat")
+    case _:
+        print("You chose the wrong program")

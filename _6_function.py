@@ -1,6 +1,6 @@
-# # A function is a block of code which only runs when it is called.
-# #  You can pass data, known as parameters, into a function.
-# #  A function can return data as a result.
+# A function is a block of code which only runs when it is called.
+#  You can pass data, known as parameters, into a function.
+#  A function can return data as a result.
 
 # def greet():
 #     print('hello Nolstan')
@@ -14,8 +14,8 @@
 # greet("Nolstan", "logic" ) # calling the function    
 
 
-# # default values are used when we want to give a default value 
-# # to a parameter in case the user does not provide one
+# default values are used when we want to give a default value 
+# to a parameter in case the user does not provide one
 # def  greet(fname = 'User', lname ='Name'):
 #     print(f'hello {fname} {lname}')
 
@@ -25,7 +25,7 @@
 # def  greet(fname = 'User', lname ='Name'):
 #     print(f'hello {fname} {lname}')
 
-# greet('Nolstan','Logic') #this will display Nolstan Logic
+# greet('Nolstan','Logic') # this will display Nolstan Logic
 
 
 # # Mixing deault values with not complete parameters
@@ -58,7 +58,7 @@
 # def fun1(a,b,c,d = 0):
 #     print(a ,b,c,d,sep='-')
 
-# # fun1(b = 70,a =23,c = 5,d =10)# order doesnt matter it will still assign values based on the argument name 
+# fun1(b = 70,a =23,c = 5,d =10)# order doesnt matter it will still assign values based on the argument name 
 
 
 
@@ -121,9 +121,9 @@ def printer(**kwargs):
     for key , value in kwargs.items():
         print(f'{key} : {value}')
 
-# printer(name = 'Nolstan', age = 23, city = 'Lagos')
+# printer(name = 'Nolstan', age = 23, city = 'Tokyo')
 
-# # return the maximum and minmum (multiple values)
+#  return the maximum and minmum (multiple values)
 
 
 # returning multiple values from a function is done by returning a tuple of the values
