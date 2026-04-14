@@ -5,7 +5,8 @@
 
 class circle:
     pi = 3.14 # class variable
-    def __init__(self, radius):
+    def __init__(self, radius: float):
+        assert radius > 0, "Radius must be a positive number"
         self.radius = radius
     def calculate_area(self):
         return circle.pi * self.radius ** 2
@@ -29,4 +30,4 @@ class rectangle:
 
 rectangle1 = rectangle(10, 5)
 
-print(rectangle.calculate_diagonal_length)
+print(f"Diagonal Length: {rectangle1.calculate_diagonal_length():.2f}")

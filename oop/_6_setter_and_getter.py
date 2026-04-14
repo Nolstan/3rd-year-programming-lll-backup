@@ -1,5 +1,6 @@
 
-# getters and setters are 
+# getters and setters are used to access and modify the private attributes of a class. 
+# They are also used to provide a way to validate the data before it is set to the private attributes.
 class car:
     def __init__(self,name,color):
         self.__name = name # this will not display the cars name nor color for the variable is now protected

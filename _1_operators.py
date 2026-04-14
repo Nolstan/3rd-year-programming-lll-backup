@@ -106,3 +106,14 @@ for i in range(101):
         print(f"number is {i} so its Fizz")
     else:
         print(i)
+
+        matrix = [[5,8,2], [6,3,7],[4,1,9]]
+        diagonal = [matrix[i][i] for i in range(len(matrix))]
+        print(diagonal)
+
+        x = 10 
+        def change():
+            x = x + 5
+            return
+        change()
+        print(x)
